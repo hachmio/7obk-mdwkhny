@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: pink;
+        flex-direction: column;
+      }
+      .heart {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        transform: rotate(-45deg);
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      .heart:before,
+      .heart:after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .heart:before {
+        top: -50px;
+        left: 0;
+      }
+      .heart:after {
+        left: 50px;
+        top: 0;
+      }
+      #message {
+        display: none;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+      }
+    </style>
+    <script>
+      function showMessage() {
+        document.querySelector(".heart").style.display = "none";
+        document.getElementById("message").style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="title">I Love You ❤️</h1>
+    <h1 id="title">Click on ❤️ Careful, it's mine!</h1>
+    <div class="heart" onclick="showMessage()"></div>
+    <p id="message">
+      My love, you are the poetry of my heart, the melody that soothes my soul.
+      Every moment with you is a symphony of warmth and joy. You are the
+      moonlight that brightens my darkest nights and the sunshine that kisses my
+      mornings. Loving you is effortless, like breathing, like dreaming. You are
+      my forever, my always, my one true love . I will never love anyone like I
+      loved you. -kanbghiiiiiiiiiiiiiiiiiiiik 😘-. 💕
+    </p>
+  </body>
+</html>
